@@ -7,9 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9608219F1CC17CB4000BE907 /* toyota.m in Sources */ = {isa = PBXBuildFile; fileRef = 96B7BFB71CB46108005B0666 /* toyota.m */; };
+		96B7BFB51CB4603C005B0666 /* Car.m in Sources */ = {isa = PBXBuildFile; fileRef = 96B7BFB41CB4603C005B0666 /* Car.m */; };
 		96DBDB471CAF99C500F49C5C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 96DBDB461CAF99C500F49C5C /* main.m */; };
-		96DBDB4F1CAF9B4900F49C5C /* Toyota.m in Sources */ = {isa = PBXBuildFile; fileRef = 96DBDB4E1CAF9B4900F49C5C /* Toyota.m */; };
-		96DBDB501CAFA50600F49C5C /* Car.h in Sources */ = {isa = PBXBuildFile; fileRef = 96DBDB4D1CAF9A9E00F49C5C /* Car.h */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,10 +25,12 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		96B7BFB31CB4603C005B0666 /* Car.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Car.h; sourceTree = SOURCE_ROOT; };
+		96B7BFB41CB4603C005B0666 /* Car.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Car.m; sourceTree = SOURCE_ROOT; };
+		96B7BFB61CB46108005B0666 /* toyota.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = toyota.h; path = ../toyota.h; sourceTree = "<group>"; };
+		96B7BFB71CB46108005B0666 /* toyota.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = toyota.m; path = ../toyota.m; sourceTree = "<group>"; };
 		96DBDB431CAF99C500F49C5C /* Car */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Car; sourceTree = BUILT_PRODUCTS_DIR; };
 		96DBDB461CAF99C500F49C5C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		96DBDB4D1CAF9A9E00F49C5C /* Car.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.objc; fileEncoding = 4; path = Car.h; sourceTree = "<group>"; };
-		96DBDB4E1CAF9B4900F49C5C /* Toyota.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Toyota.m; path = ../Toyota.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,9 +63,11 @@
 		96DBDB451CAF99C500F49C5C /* Car */ = {
 			isa = PBXGroup;
 			children = (
+				96B7BFB61CB46108005B0666 /* toyota.h */,
+				96B7BFB71CB46108005B0666 /* toyota.m */,
+				96B7BFB31CB4603C005B0666 /* Car.h */,
+				96B7BFB41CB4603C005B0666 /* Car.m */,
 				96DBDB461CAF99C500F49C5C /* main.m */,
-				96DBDB4D1CAF9A9E00F49C5C /* Car.h */,
-				96DBDB4E1CAF9B4900F49C5C /* Toyota.m */,
 			);
 			path = Car;
 			sourceTree = "<group>";
@@ -127,9 +131,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				96DBDB501CAFA50600F49C5C /* Car.h in Sources */,
 				96DBDB471CAF99C500F49C5C /* main.m in Sources */,
-				96DBDB4F1CAF9B4900F49C5C /* Toyota.m in Sources */,
+				96B7BFB51CB4603C005B0666 /* Car.m in Sources */,
+				9608219F1CC17CB4000BE907 /* toyota.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -250,6 +254,7 @@
 				96DBDB4C1CAF99C500F49C5C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

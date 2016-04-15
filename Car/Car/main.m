@@ -8,27 +8,21 @@
 
 #import <Foundation/Foundation.h>
 #import "Car.h"
+#import "Toyota.h"
 
 int main(int argc, const char * argv[]) {
-    @autoreleasepool {
-        
-        
-        Car *toyota = [[Car alloc]init];
-        [toyota setModel:@"Toyota Prius"];
-        NSLog(@"I'm driving a %@", [toyota model]);
-        
-//        toyota.model = @"Toyota Camry";
-//        NSLog(@"I'm changing the car to a %@", [toyota model]);
-
-        [toyota drive];
-        
-        [Car setDefaultModel:@"Nissan Rogue"];
-        
-        Car *nissan = [[Car alloc]init];
-        NSLog(@"Created a %@", [nissan model]);
-        
-        [nissan drive];
-
-    }
+    
+    // Add an instance of a Car called nissan. Initialize it with model named "Rogue"
+    Car *nissan = [[Car alloc] initWithModel:@"Nissan Rogue"];
+    
+    // Add drive() method to print out "Rogue"
+    [nissan drive];
+    
+    // Add an instance of Toyota called toyota. Initialize it
+    Toyota *toyota = [[Toyota alloc] init];
+    
+    // Add drive() method to print out "Prius"
+    [toyota drive];
+    
     return 0;
 }
