@@ -11,12 +11,18 @@
 @implementation Toyota
 
 // Override init() and set _model to "Prius" inside the method
+
 - (id)init {
-    self = [super init];
-    if (self) {
-        self.model = @"Toyota Prius";
-    }
+    self = [super initWithModel:@"Toyota Prius"];
     return self;
 }
+
+//- (id)init {
+//    self = [super init];
+//    if (self) {
+//        self.model = @"Toyota Prius";
+//    }
+//    return self;
+//}
 
 @end
